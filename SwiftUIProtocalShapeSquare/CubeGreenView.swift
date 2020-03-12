@@ -8,21 +8,22 @@
 
 import SwiftUI
 
-struct CubeView: View {
+struct CubeGreenView: View {
     var positionX: CGFloat = 0
     var positionY: CGFloat = 0
     var width: CGFloat = 0
-
+    var height: CGFloat = 0
+    
     var body: some View {
         Cube()
-            .fill(Color(red: 0/255, green: 0/255, blue:0/255))
-         .frame(width: width, height: width)
+        .fill(Color(red: 0/255, green: 255/255, blue:0/255))
+         .frame(width: width, height: height)
          .offset(x:positionX, y: positionY)
     }
 }
 
-struct CubeView_Previews: PreviewProvider {
+struct CubeGreenView_Previews: PreviewProvider {
     static var previews: some View {
-       CubeView()
+       CubeGreenView()
     }
 }

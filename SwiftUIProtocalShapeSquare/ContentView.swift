@@ -10,6 +10,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
+        
          ZStack{
             Image("blue")
              .resizable()
@@ -18,18 +19,74 @@ struct ContentView: View {
              .offset(x:0, y:-200)
              .foregroundColor(Color(.sRGB, red: 255/255, green: 255/255, blue: 15/255))
             .frame(width:300)
-            VStack{
+            
             Text("西瓜日記")
                     .fontWeight(.black)
                     .font(.system(size:40))
-                    .offset(x:0, y:-260)
-                
+                    .offset(x:0, y:-280)
+               
             Group{
-             CubeView(positionX: 0, positionY:-270, width:30)
-                 
-                
+             CubeGreenView(positionX: -130, positionY:-220, width:20, height:20)
+             CubeGreenView(positionX: -130, positionY:-200, width:20, height:20)
+             CubeGreenView(positionX: -130, positionY:-180, width:20, height:20)
+             CubeGreenView(positionX: -130, positionY:-160, width:20, height:20)
+            CubeGreenView(positionX: -110, positionY:-160, width:20, height:20)
+            CubeGreenView(positionX: -110, positionY:-140, width:20, height:20)
+            CubeGreenView(positionX: -90, positionY:-140, width:20, height:20)
+            CubeGreenView(positionX: -90, positionY:-120, width:20, height:20)
+            CubeGreenView(positionX: -70, positionY:-120, width:20, height:20)
+             CubeGreenView(positionX: -70, positionY:-100, width:20, height:20)
+               
             }
+            
+            Group{
+             CubeGreenView(positionX: -50, positionY:-100, width:20, height:20)
+             CubeGreenView(positionX: -30, positionY:-100, width:20, height:20)
+            CubeGreenView(positionX: -10, positionY:-100, width:20, height:20)
+            CubeGreenView(positionX: 10, positionY:-100, width:20, height:20)
+            CubeGreenView(positionX: 30, positionY:-100, width:20, height:20)
+            CubeGreenView(positionX: 50, positionY:-100, width:20, height:20)
+            CubeGreenView(positionX: 70, positionY:-100, width:20, height:20)
             }
+            Group{
+                CubeGreenView(positionX: 70, positionY:-120, width:20, height:20)
+                 CubeGreenView(positionX: 90, positionY:-120, width:20, height:20)
+                CubeGreenView(positionX: 90, positionY:-140, width:20, height:20)
+                 CubeGreenView(positionX: 110, positionY:-140, width:20, height:20)
+                CubeGreenView(positionX: 110, positionY:-160, width:20, height:20)
+                CubeGreenView(positionX: 130, positionY:-160, width:20, height:20)
+                CubeGreenView(positionX: 130, positionY:-180, width:20, height:20)
+                CubeGreenView(positionX: 130, positionY:-200, width:20, height:20)
+                CubeGreenView(positionX: 130, positionY:-220, width:20, height:20)
+            }
+            Group{
+                CubePinkView(positionX: 0, positionY:-220, width:200, height:20)
+                CubePinkView(positionX: 0, positionY:-200, width:200, height:20)
+                CubePinkView(positionX: 0, positionY:-180, width:200, height:20)
+                CubePinkView(positionX: 0, positionY:-160, width:160, height:20)
+                CubePinkView(positionX: 0, positionY:-140, width:120, height:20)
+            }
+            
+            Group{
+                CubeBlackView(positionX: -90, positionY:-200, width:20, height:20)
+                CubeBlackView(positionX: 0, positionY:-200, width:20, height:20)
+                CubeBlackView(positionX: 90, positionY:-200, width:20, height:20)
+                 CubeBlackView(positionX: -50, positionY:-180, width:20, height:20)
+                 CubeBlackView(positionX: 50, positionY:-180, width:20, height:20)
+                 CubeBlackView(positionX: 0, positionY:-160, width:20, height:20)
+                CubeBlackView(positionX: -50, positionY:-140, width:20, height:20)
+                CubeBlackView(positionX: 50, positionY:-140, width:20, height:20)
+            }
+             Group{
+                CubeWhiteView(positionX: -110, positionY:-200, width:20, height:60)
+                CubeWhiteView(positionX: -90, positionY:-160, width:20, height:20)
+                CubeWhiteView(positionX: -70, positionY:-140, width:20, height:20)
+                CubeWhiteView(positionX: 0, positionY:-120, width:120, height:20)
+                CubeWhiteView(positionX: 70, positionY:-140, width:20, height:20)
+                CubeWhiteView(positionX: 90, positionY:-160, width:20, height:20)
+                 CubeWhiteView(positionX: 110, positionY:-200, width:20, height:60)
+            }
+         
                 HStack(alignment: .center, spacing:1){
                  Text("痞")
                      .font(.system(.largeTitle))
@@ -69,9 +126,10 @@ struct Cube: Shape {
     func path(in rect:CGRect) -> Path {
         Path { (path) in
             path.move(to: CGPoint(x:rect.width, y:0))
+            path.addLine(to: CGPoint(x:rect.width, y: rect.width))
             path.addLine(to: CGPoint(x:rect.width, y: rect.height))
-            path.addLine(to: CGPoint(x:rect.width, y: rect.height))
-            path.addLine(to: CGPoint(x:rect.width, y: rect.height))
+            path.addLine(to: CGPoint(x:0, y: rect.height))
+            path.addLine(to: CGPoint(x:0, y: 0))
             path.closeSubpath()
         }
     }
