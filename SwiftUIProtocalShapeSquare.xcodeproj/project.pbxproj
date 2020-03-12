@@ -13,6 +13,7 @@
 		DD14144B2418DBB30077F82E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD14144A2418DBB30077F82E /* Assets.xcassets */; };
 		DD14144E2418DBB30077F82E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD14144D2418DBB30077F82E /* Preview Assets.xcassets */; };
 		DD1414512418DBB30077F82E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD14144F2418DBB30077F82E /* LaunchScreen.storyboard */; };
+		DD1414592419BC6E0077F82E /* CubeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1414582419BC6D0077F82E /* CubeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		DD14144D2418DBB30077F82E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DD1414502418DBB30077F82E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD1414522418DBB30077F82E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD1414582419BC6D0077F82E /* CubeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				DD1414442418DBB10077F82E /* AppDelegate.swift */,
 				DD1414462418DBB10077F82E /* SceneDelegate.swift */,
 				DD1414482418DBB10077F82E /* ContentView.swift */,
+				DD1414582419BC6D0077F82E /* CubeView.swift */,
 				DD14144A2418DBB30077F82E /* Assets.xcassets */,
 				DD14144F2418DBB30077F82E /* LaunchScreen.storyboard */,
 				DD1414522418DBB30077F82E /* Info.plist */,
@@ -149,6 +152,7 @@
 				DD1414452418DBB10077F82E /* AppDelegate.swift in Sources */,
 				DD1414472418DBB10077F82E /* SceneDelegate.swift in Sources */,
 				DD1414492418DBB10077F82E /* ContentView.swift in Sources */,
+				DD1414592419BC6E0077F82E /* CubeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
