@@ -16,9 +16,11 @@ struct CubePinkView: View {
            
            var body: some View {
                Cube()
-                   .fill(Color(red: 255/255, green: 0/255, blue:0/255))
+                .fill(LinearGradient(gradient:Gradient(colors:
+                [Color(.sRGB, red: 244/255, green: 29/255, blue: 175/255, opacity: 1),Color(.sRGB, red: 240/255, green: 73/255, blue: 120/255, opacity: 0.4)]),startPoint: .leading, endPoint: .trailing))
                 .frame(width: width, height: height)
                 .offset(x:positionX, y: positionY)
+            
            }
        }
 
